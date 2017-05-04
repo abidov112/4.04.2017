@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       var a = Number(prompt("a-ni daxil edin"));
+       var b = Number(prompt("b-ni daxil edin"));
+       var c = Number(prompt("c-ni daxil edin"));
+       if((a+b>c) || (a+c>b) || (b+c>a)) {
+           if(a == b && b == c) {
+               console.log("equilateral") ;
+           }else if (   a == b || b == c || a == c ) {
+                console.log("isosceles");
+       }else {
+           console.log("scalene");
+           }
+
+       }else {
+           console.log("figure is not triangle");
+       }
+    </script>
+
+</body>
+
+</html>
